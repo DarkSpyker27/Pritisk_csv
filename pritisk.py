@@ -11,7 +11,7 @@ def substring_after(s, delim):
 
 sistoicni = []
 hiperstoicni = []
-prevlki_tlak = []
+prevlkiTlak = []
 dates = []
  
 file = open("test.csv", "r")
@@ -24,9 +24,9 @@ hiperstoicni = [int(row["Hiperstoicni"]) for row in data]
 
 for x in sistoicni:
     if x >= 140:
-        prevlki_tlak.append(x)
+        prevlkiTlak.append(x)
 
-print(prevlki_tlak)
+print(prevlkiTlak)
 
 date = [str(row['date']) for row in data]
 
